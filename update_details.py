@@ -3,6 +3,7 @@ def update_details():
     cursor = None
     conn = None
     try:
+        data = pd.DataFrame()
         for page in range(250):
             new = get_stocks(page)
             data = data.append(new, ignore_index=True)

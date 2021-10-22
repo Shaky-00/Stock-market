@@ -4,7 +4,7 @@ def get_stock_info(code):
     conn = None
     try:
         conn, cursor = get_conn()
-        sql = "select * from current_details where code='%d'"
+        sql = "select * from current_details where code='%s'"
         cursor.execute(sql, code)
         results = cursor.fetchall()
         df = pd.DataFrame(results, columns=['代码','名称','当前价格','涨幅', '涨价','总手','换手','市盈',
