@@ -14,5 +14,6 @@ CREATE TABLE `current_details`(
     `y_close` float,
     `total_market` bigint,
     `current_market` bigint,
-    `PBR` float
+    `PBR` float,
+    `update_time` DATETIME
 )ENGINE=InnoDB DEFAULT CHARACTER SET = utf8;

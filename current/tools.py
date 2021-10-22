@@ -1,4 +1,6 @@
-# 获取代码为code的股票行情信息
+# 一些功能性的接口函数（数据库查询/分析）
+
+# 1. 获取代码为code的股票行情信息
 def get_stock_info(code):
     cursor = None
     conn = None
