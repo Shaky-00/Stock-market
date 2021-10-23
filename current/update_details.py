@@ -12,7 +12,7 @@ from get_stocks import get_stocks
 def update_details():
     cursor = None
     conn = None
-    try:*
+    try:
         data = pd.DataFrame()
         for page in range(250):
             new = get_stocks(page)
