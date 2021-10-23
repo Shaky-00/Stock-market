@@ -4,12 +4,15 @@ import json
 import pandas as pd
 import pymysql
 import time
+from connect import get_conn, close_conn
+from get_stocks import get_stocks
+
 
 # 更新details函数
 def update_details():
     cursor = None
     conn = None
-    try:
+    try:*
         data = pd.DataFrame()
         for page in range(250):
             new = get_stocks(page)
