@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    background-color: grey;
+}
+#title{
+    position: absolute;
+    height: 10%;
+    width: 40%;
+    top: 0;
+    left: 30%;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#time {
+	position: absolute;
+	height: 10%;
+	top: 0;
+	right: 2%;
+    font-size: 15px;
+	color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#left{
+    position: absolute;
+    height: 90%;
+    width: 65%;
+    top:10%;
+    left: 0;
+    max-width: 65%;
+    background-color: beige;
+}
+
+#right1{
+    position: absolute;
+    height: 30%;
+    width: 35%;
+    top:10%;
+    right: 0;
+    max-width: 35%;
+    background-color: burlywood;
+}
+
+#right2{
+    position: absolute;
+    height: 30%;
+    width: 35%;
+    top: 50%;
+    right: 0;
+    max-width: 35%;
+    background-color: darkseagreen;
+}
+
+#right3{
+    position: absolute;
+    height: 30%;
+    width: 35%;
+    top: 80%;
+    right: 0;
+    max-width: 35%;
+    background-color: lightpink;
+}
+
+#total_title{
+    position: absolute;
+	height: 10%;
+    width: 100%;
+	top: 0;
+	left: 0;
+    font-size: 20px;
+    font-weight: bold;
+	color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: black;*/
+}
+
+#hl_title{
+    position: absolute;
+	height: 22.5%;
+    width: 100%;
+	top: 0;
+	right: 0;
+    font-size: 20px;
+    font-weight: bold;
+	color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#total{
+    position: absolute;
+	height: 90%;
+    width: 100%;
+    max-width: 100%;
+	top: 10%;
+	left: 0;
+    font-size: 5px;
+	color: white;
+    display: flow;
+    align-items: center;
+    /*background-color: darkcyan;*/
+    /*overflow-x: scroll;*/
+    /*overflow-y: scroll;*/
+}
+
+#high_low{
+    position: absolute;
+	height: 77.5%;
+    width: 100%;
+	top: 22.5%;
+	right: 0;
+    font-size: 15px;
+	color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table{
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.higho_lowg td, th{
+    text-align: center;
+    color: white;
+}
+
+.details td, th{
+    text-align: center;
+    color: white;
+}
+td{
+    color:black;
+    font-size: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+th{
+    color:black;
+    font-size: 5px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}

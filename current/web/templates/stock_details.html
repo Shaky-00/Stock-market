@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>股市大盘实时情况</title>
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/query.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+    <div id="title">股市大盘实时情况</div>
+    <div id="time"></div>
+
+    <div id="right1">
+        <div id="hl_title">高开低走股票</div>
+        <div id="high_low" class="table">
+            {{ higho_lowg|safe }}
+        </div>
+    </div>
+
+    <div id="right2">
+        我是右二
+    </div>
+
+    <div id="right3">
+        我是右三
+    </div>
+
+    <div id="left">
+        <div id="total_title">沪深A股行情信息</div>
+        <div id="total" class="table">
+            {{ details|safe }}
+        </div>
+    </div>
+
+<script>
+    function gettime(){
+        $.ajax({
+            url:"/time",
+            timeout:10000,
+            success:function (data){
+                $("#time").html(data)
+            },
+            error: function(xhr, type, errorThrown) {
+            }
+        });
+    }
+    setInterval(gettime, 1000)
+</script>
+</body>
+
+</html>
