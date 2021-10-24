@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from get_stocks import get_stocks, get_higho_lowg, get_pic
+from get_stocks import get_stocks, get_higho_lowg
 import pandas as pd
 import utils
 
