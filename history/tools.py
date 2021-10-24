@@ -53,6 +53,7 @@ def get_interval_data(lst, start_date, end_date):
         vol = lst[i]['v']
         df = df.append([{'日期': date, '开盘价': open_price, '收盘价': close_price,
                        '最高价': high, '最低价': low, '成交量': vol}], ignore_index=True)
+        df = manage(df)
     return df[1:]
 
 # 获取近n天的所有数据 以dataframe返回
@@ -71,6 +72,7 @@ def get_ndays_data(lst, n):
         vol = lst[i]['v']
         df = df.append([{'日期': date, '开盘价': open_price, '收盘价': close_price,
                        '最高价': high, '最低价': low, '成交量': vol}], ignore_index=True)
+        df = manage(df)
     return df[1:]
 
 
