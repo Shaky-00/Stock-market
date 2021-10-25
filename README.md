@@ -26,31 +26,31 @@ Stock_market
 |	Diary.md			# 工程日志 记录完成project的记录
 |	README.md	
 |
-|--------current			# 实时股票大盘
-|			|
-|			|	connect.py			# 获取数据库连接
-| 			|  	get_stocks.py		# 爬虫获取A股大盘数据
-|			|	stock.sql			# 数据库相关语句
-|			|	tools.py			# 股票操作tools
-|			|	update_details.py	# 更新数据库
-|			|
-|			|----------web		# 实盘网页部署
-|						|
-|						|	app.py			#网页部署主程序
-|						|	get_stocks.py 	# 获取股票信息相关函数
-|						|	utils.py		# 获取网页实时更新数据相关函数
-|						|
-|						|--------static		# CSS与Javascript
-|						|
-|						|--------templates	# HTML
+|-----------current			# 实时股票大盘
+|		|
+|		|	connect.py			# 获取数据库连接
+| 		|  	get_stocks.py		# 爬虫获取A股大盘数据
+|		|	stock.sql			# 数据库相关语句
+|		|	tools.py			# 股票操作tools
+|		|	update_details.py	# 更新数据库
+|		|
+|		|----------web		# 实盘网页部署
+|				|
+|				|	app.py			#网页部署主程序
+|				|	get_stocks.py 	# 获取股票信息相关函数
+|				|	utils.py		# 获取网页实时更新数据相关函数
+|				|
+|				|--------static		# CSS与Javascript
+|				|
+|				|--------templates	# HTML
 |
-|--------history			# 个股历史数据
-|			|
-|			| 	get_stock_history.py	# 获取个股历史数据demo
-|			|	tools.py				# 对历史数据的相关操作tools
-|			|	test_history.ipynb		# jupyter notebook分析数据
+|-----------history		# 个股历史数据
+|		|
+|		| 	get_stock_history.py	# 获取个股历史数据demo
+|		|	tools.py				# 对历史数据的相关操作tools
+|		|	test_history.ipynb		# jupyter notebook分析数据
 |
-|--------log	# Diary.md与README.md中的图片
+|-----------log		# Diary.md与README.md中的图片
 ```
 
 
