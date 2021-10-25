@@ -17,3 +17,8 @@ CREATE TABLE `current_details`(
     `PBR` float,
     `update_time` DATETIME
 )ENGINE=InnoDB DEFAULT CHARACTER SET = utf8;
+
+select * from current_details
+    where code REGEXP '^30' and name not REGEXP '^C' and gains>19.9
+    or code REGEXP '^00' and gains>9.9
+    or code REGEXP '^60' and gains>9.9;
