@@ -34,15 +34,15 @@ Stock_market
 |		|	tools.py			# 股票操作tools
 |		|	update_details.py	# 更新数据库
 |		|
-|		|----------web		# 实盘网页部署
-|				|
-|				|	app.py			#网页部署主程序
-|				|	get_stocks.py 	# 获取股票信息相关函数
-|				|	utils.py		# 获取网页实时更新数据相关函数
-|				|
-|				|--------static		# CSS与Javascript
-|				|
-|				|--------templates	# HTML
+|		|-----------web		# 实盘网页部署
+|			|
+|			|	app.py			#网页部署主程序
+|			|	get_stocks.py 	# 获取股票信息相关函数
+|			|	utils.py		# 获取网页实时更新数据相关函数
+|			|
+|			|--------static		# CSS与Javascript
+|			|
+|			|--------templates	# HTML
 |
 |-----------history		# 个股历史数据
 |		|
