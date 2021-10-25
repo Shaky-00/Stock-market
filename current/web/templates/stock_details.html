@@ -8,8 +8,20 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
 </head>
 <body>
-    <div id="title">股市大盘实时情况</div>
-    <div id="time"></div>
+    <div id="title">
+        <div id="title_txt">
+            股市大盘实时行情<br>
+            Real-time situation of the stock market
+        </div>
+        <div id="time"></div>
+    </div>
+
+    <div id="right0">
+        <div id="l1" class="digit"></div>
+        <div id="r1" class="digit"></div>
+        <div id="l2" class="txt">涨停股数</div>
+        <div id="r2" class="txt">跌停股数</div>
+    </div>
 
     <div id="right1">
         <div id="hl_title">高开低走股票</div>
@@ -19,11 +31,17 @@
     </div>
 
     <div id="right2">
-        我是右二
+        <div id="limit_title">涨停股票</div>
+        <div id="limit" class="table">
+            {{ rise_limit|safe }}
+        </div>
     </div>
 
     <div id="right3">
-        我是右三
+        <div id="limit_title">跌停股票</div>
+        <div id="limit" class="table">
+            {{ drop_limit|safe }}
+        </div>
     </div>
 
     <div id="left">
@@ -46,6 +64,34 @@
         });
     }
     setInterval(gettime, 1000)
+</script>
+<script>
+    function getrise(){
+        $.ajax({
+            url:"/rise",
+            timeout: 10000,
+            success:function (data){
+                $("#l1").html(data)
+            },
+            error: function(xhr, type, errorTrown) {
+            }
+        })
+    }
+    setInterval(getrise, 1000)
+</script>
+<script>
+    function getdrop(){
+        $.ajax({
+            url:"/drop",
+            timeout: 10000,
+            success:function (data){
+                $("#r1").html(data)
+            },
+            error: function(xhr, type, errorTrown) {
+            }
+        })
+    }
+    setInterval(getdrop, 1000)
 </script>
 </body>
 
