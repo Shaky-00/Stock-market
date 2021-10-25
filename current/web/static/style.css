@@ -69,7 +69,7 @@ body{
     left: 0;
     max-width: 50%;
     font-size: 50px;
-    color: green;
+    color: red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +100,7 @@ body{
     right: 0;
     max-width: 50%;
     font-size: 50px;
-    color: red;
+    color: green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,6 +157,20 @@ body{
     border-color: beige;
     border-style: ridge;
     /*background-color: #CCFFFF;*/
+}
+
+#bottom{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    color: #E2DA99;
+    font-family: "Comic Sans MS";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #342800;
 }
 
 #total_title{
