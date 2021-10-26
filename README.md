@@ -23,22 +23,22 @@
 Stock_market
 |
 |	data_format.txt		# 爬虫获取到的数据格式
-|	Diary.md			# 工程日志 记录完成project的记录
+|	Diary.md		# 工程日志 记录完成project的记录
 |	README.md	
 |
 |-----------current			# 实时股票大盘
 |		|
-|		|	connect.py			# 获取数据库连接
+|		|	connect.py		# 获取数据库连接
 | 		|  	get_stocks.py		# 爬虫获取A股大盘数据
-|		|	stock.sql			# 数据库相关语句
-|		|	tools.py			# 股票操作tools
+|		|	stock.sql		# 数据库相关语句
+|		|	tools.py		# 股票操作tools
 |		|	update_details.py	# 更新数据库
 |		|
 |		|-----------web		# 实盘网页部署
 |			|
-|			|	app.py			#网页部署主程序
+|			|	app.py		#网页部署主程序
 |			|	get_stocks.py 	# 获取股票信息相关函数
-|			|	utils.py		# 获取网页实时更新数据相关函数
+|			|	utils.py	# 获取网页实时更新数据相关函数
 |			|
 |			|--------static		# CSS与Javascript
 |			|
@@ -47,7 +47,7 @@ Stock_market
 |-----------history		# 个股历史数据
 |		|
 |		| 	get_stock_history.py	# 获取个股历史数据demo
-|		|	tools.py				# 对历史数据的相关操作tools
+|		|	tools.py		# 对历史数据的相关操作tools
 |		|	test_history.ipynb		# jupyter notebook分析数据
 |
 |-----------log		# Diary.md与README.md中的图片
@@ -66,6 +66,13 @@ Stock_market
 * **网页部署实盘数据：**编写网页显示数据库中大盘股票的情况，并展示当前高开低走、涨停与跌停的股票，以及涨停与跌停的股票支数，以便直观了解大盘行情。网页中使用ajax实时获取涨跌停股票指数与界面时间，通过刷新网页可获得实时股票数据信息。网页界面如下：
 
   ![image-20211026001540634](/log/image-20211026001540634.png)
+
+* 股票大盘分析操作：除了在网页上部署相应实时信息，本项目还在/current/tools.py中定义了四个接口函数，在运行/current/query.py中可直接调用进行分析
+
+  > 1. 获取代码为code的股票行情信息get_stock_info(code)
+  > 2. 获取当前全部涨停股票信息get_rise_limit()
+  > 3. 获取当前全部跌停股票信息get_drop_limit()
+  > 4. 获取当前涨跌股票支数get_rise_drop_num()
 
 * **指定时间历史数据获得：**历史数据通过jupyter notebook进行分析，使用编写好的函数接口可以获得某股（此处使用浦发银行sh600000为例）近N天或某段时间内每一天的开盘价/收盘价/最高价/最低价/成交量，以DataFrame的形式展示：
 

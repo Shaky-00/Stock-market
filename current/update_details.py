@@ -6,6 +6,7 @@ import pymysql
 import time
 from connect import get_conn, close_conn
 from get_stocks import get_stocks
+import traceback
 
 
 # 更新details函数
