@@ -30,6 +30,7 @@ Stock_market
 |		|
 |		|	connect.py		# 获取数据库连接
 | 		|  	get_stocks.py		# 爬虫获取A股大盘数据
+|		|	query.py		# 主查询程序
 |		|	stock.sql		# 数据库相关语句
 |		|	tools.py		# 股票操作tools
 |		|	update_details.py	# 更新数据库
