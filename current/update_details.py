@@ -22,7 +22,9 @@ def update_details():
         li.replace(to_replace='-', value=0, inplace=True)
 
         conn, cursor = get_conn()
-        sql = "insert into current_details(code,name,current_price,gains,increase_price,vol,turn_over,PE,high,low,t_open,y_close,total_market,current_market,PBR,update_time) \
+        sql = "insert into current_details(code,name,current_price,gains,\
+                increase_price,vol,turn_over,PE,high,low,t_open,y_close,\
+                total_market,current_market,PBR,update_time) \
                 values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
         cursor.execute("TRUNCATE TABLE current_details")
         update_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
