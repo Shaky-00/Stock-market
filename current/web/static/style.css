@@ -20,7 +20,7 @@ body{
     height: 100%;
     top: 0;
     left: 5%;
-    font-size: 30px;
+    font-size: 40px;
     font-family: "Comic Sans MS";
     color: #E2DA99;
     display: flex;
@@ -46,7 +46,6 @@ body{
     top:20%;
     left: 0;
     max-width: 65%;
-    /*background-color: beige;*/
 }
 
 #right0{
@@ -68,7 +67,7 @@ body{
     top:0;
     left: 0;
     max-width: 50%;
-    font-size: 50px;
+    font-size: 60px;
     color: red;
     display: flex;
     align-items: center;
@@ -83,7 +82,7 @@ body{
     top:50%;
     left: 0;
     max-width: 50%;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     color: white;
     display: flex;
@@ -99,7 +98,7 @@ body{
     top: 0;
     right: 0;
     max-width: 50%;
-    font-size: 50px;
+    font-size: 60px;
     color: green;
     display: flex;
     align-items: center;
@@ -114,7 +113,7 @@ body{
     top: 50%;
     right: 0;
     max-width: 50%;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     color: white;
     display: flex;
@@ -179,7 +178,7 @@ body{
     width: 100%;
 	top: 0;
 	left: 0;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
 	color: black;
     display: flex;
@@ -194,7 +193,7 @@ body{
     width: 100%;
 	top: 0;
 	right: 0;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
 	color: black;
     display: flex;
@@ -208,7 +207,7 @@ body{
     width: 100%;
 	top: 0;
 	right: 0;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
 	color: black;
     display: flex;
@@ -223,11 +222,11 @@ body{
     max-width: 100%;
 	top: 10%;
 	left: 2.5%;
-    font-size: 5px;
+    font-size: 15px;
 	color: white;
     display: flow;
     align-items: center;
-    /*background-color: darkcyan;*/
+    justify-content: center;
     /*overflow-x: scroll;*/
     /*overflow-y: scroll;*/
 }
@@ -252,7 +251,7 @@ body{
     /*max-width: 100%;*/
 	top: 15%;
 	left: 2.5%;
-    font-size: 5px;
+    font-size: 15px;
 	color: white;
     display: flow;
     align-items: center;
@@ -262,6 +261,8 @@ body{
 .table{
     overflow-x: scroll;
     overflow-y: scroll;
+    align-items: center;
+    justify-content: center;
 }
 
 .higho_lowg td, th{
@@ -271,29 +272,33 @@ body{
 
 .details td, th{
     text-align: center;
+    font-size: 15px;
     color: white;
+    align-items: center;
 }
 
 .rise_limit td, th{
     text-align: center;
+    font-size: 15px;
     color: white;
 }
 
 .drop_limit td, th{
     text-align: center;
+    font-size: 15px;
     color: white;
 }
 
 td{
     color:black;
-    font-size: 5px;
+    font-size: 15px;
     background-color: white;
     text-align: center;
 }
 
 th{
     color:black;
-    font-size: 5px;
+    font-size: 15px;
     background-color: white;
     position: sticky;
     top: 0;
